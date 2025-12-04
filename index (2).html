@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KLICKBAY — Curated Sneakers · Luxury Perfumes · Bespoke Traditional Fashion</title>
+  <meta name="description" content="KLICKBAY offers curated kids' sneakers, imported luxury perfumes at accessible prices, and bespoke traditional fashion inspired by African heritage. Christiano Ronaldo Quote">
+  <meta name="keywords" content="Klickbay, sneakers, kids shoes, luxury perfumes, bespoke fashion, traditional clothing, South Africa">
+
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="KLICKBAY — Sneakers, Perfumes & Bespoke Fashion">
+  <meta property="og:description" content="Imported luxury fragrances made accessible — curated sneakers and bespoke traditional garments.">
+  <meta property="og:image" content="klickbay-logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts + Icons + Tailwind CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Store",
+    "name":"KLICKBAY",
+    "description":"Curated kids' sneakers, imported luxury perfumes at accessible prices, and bespoke traditional fashion.",
+    "url":"https://nomzanmazi.github.io/klickbay/"
+  }
+  </script>
+
+  <style>
+    :root{
+      --gold:#d4af37;
+      --gold-2:#b8892e;
+      --muted:#cfcfcf;
+    }
+    html,body{height:100%}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #080808;
+      color: #F6F6F6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Transparent glass effect */
+    .glass { background: rgba(255,255,255,0); border: none; backdrop-filter: none; }
+
+    /* Subtle focus */
+    :focus{outline:3px solid rgba(212,175,55,0.0); outline-offset:3px}
+
+    /* Fade-in animation */
+    .fade{animation:fadeIn 1s ease both}
+    @keyframes fadeIn{from{opacity:0;transform: translateY(20px)}to{opacity:1;transform:none}}
+
+    /* Product image style */
+    .product-img{min-height:180px; object-fit:cover; border-radius:10px}
+
+    /* Responsive container */
+    .maxw{max-width:1200px}
+
+    /* Text shadow for readability */
+    h1, p { text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-black/60 backdrop-blur-sm border-b border-white/6">
+    <div class="maxw mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3" aria-label="KLICKBAY Home">
+        <img src="klickbay-logo.png" alt="KLICKBAY logo" class="h-12 w-12 rounded-full object-cover shadow-sm">
+        <div>
+          <div class="text-lg font-extrabold tracking-tight">KLICKBAY</div>
+          <div class="text-xs text-gray-300">Sneakers · Perfumes · Bespoke Traditional Fashion</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#perfumes" class="hover:text-yellow-300 transition">Perfumes</a>
+        <a href="#sneakers" class="hover:text-yellow-300 transition">Sneakers</a>
+        <a href="#kids" class="hover:text-yellow-300 transition">Kids' Shoes</a>
+        <a href="#fashion" class="hover:text-yellow-300 transition">Bespoke Fashion</a>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--gold)] to-[var(--gold-2)] text-black px-4 py-2 rounded-lg shadow-sm font-semibold">Enquire</a>
+      </nav>
+
+      <button id="mobile-toggle" class="md:hidden p-2 text-gray-200" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+      <a href="#perfumes" class="block py-2">Perfumes</a>
+      <a href="#sneakers" class="block py-2">Sneakers</a>
+      <a href="#kids" class="block py-2">Kids' Shoes</a>
+      <a href="#fashion" class="block py-2">Bespoke Fashion</a>
+      <a href="#contact" class="block py-2">Enquire</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="min-h-[70vh] flex items-center relative overflow-hidden">
+    <picture class="absolute inset-0 -z-10">
+      <source srcset="hero-large.jpg" media="(min-width:1024px)">
+      <img src="Gemini_Generated_Image_293u77293u77293u.png" alt="KLICKBAY hero" class="w-full h-[70vh] object-cover opacity-100" loading="lazy" />
+    </picture>
+
+    <section class="w-full">
+      <div class="maxw mx-auto px-6 py-16 text-center fade">
+        <div class="max-w-3xl mx-auto p-8 rounded-2xl">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Signature Scents. Curated Sneakers. Bespoke Traditional Fashion.</h1>
+          <p class="text-gray-300 mb-6">Imported luxury fragrances made accessible — premium formulas, authentic sourcing, and approachable pricing. Discover curated sneakers and custom traditional garments crafted with care.</p>
+
+          <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+            <a href="#perfumes" class="px-6 py-3 rounded-md font-semibold bg-gradient-to-r from-[var(--gold)] to-[var(--gold-2)] text-black shadow-sm">Explore Perfumes</a>
+            <a href="#sneakers" class="px-6 py-3 rounded-md font-semibold border border-white/10">Shop Sneakers</a>
+            <a href="#fashion" class="px-6 py-3 rounded-md font-semibold border border-white/10">Custom Fashion</a>
+          </div>
+
+          <p class="text-xs text-gray-400 mt-4">Perfume purchases are handled securely via our enquiry process</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sections -->
+  <section id="perfumes" class="maxw mx-auto px-6 py-12">
+    <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <img src="Gemini_Generated_Image_7vpcmd7vpcmd7vpc (1).png.jpg" alt="Luxury perfumes collection" class="w-full h-96 object-cover" loading="lazy">
+      </div>
+
+      <div class="glass p-6 rounded-xl">
+        <h2 class="text-2xl font-bold">Imported Luxury Perfumes — Accessible Pricing</h2>
+        <p class="text-gray-300 mt-3">We source authentic, high-quality fragrances from trusted international suppliers and offer them in accessible price tiers. Each formulation is selected for longevity and true-to-original character.</p>
+
+        <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-200">
+          <li class="p-3 bg-white/3 rounded">
+            <strong>For Her</strong>
+            <div class="text-xs text-gray-300 mt-1">Warm gourmands, delicate florals and modern gourmand signatures.</div>
+          </li>
+          <li class="p-3 bg-white/3 rounded">
+            <strong>For Him</strong>
+            <div class="text-xs text-gray-300 mt-1">Refined fougères, woody orientals and crisp citrus accords.</div>
+          </li>
+        </ul>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#contact" class="px-4 py-2 rounded bg-[var(--gold)] text-black font-semibold">Enquire About Perfumes</a>
+          <button onclick="openQuickList('perfume-list')" class="px-4 py-2 rounded border border-white/10">View Fragrance List</button>
+        </div>
+
+        <p class="text-xs text-gray-400 mt-4">Available sizes: 30ml / 50ml / 100ml. For stock and sizing details, submit your enquiry — we reply personally with availability and shipping options.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sneakers, Kids, Fashion, Contact, Footer sections stay the same -->
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27680320894" class="fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <div style="background:#25d366" class="w-full h-full rounded-full flex items-center justify-center text-white">
+      <i class="fab fa-whatsapp fa-lg"></i>
+    </div>
+  </a>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center z-60">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative bg-black/90 rounded-xl w-11/12 md:w-3/4 lg:w-1/2 p-6 glass">
+      <button id="modal-close" class="absolute top-4 right-4 text-gray-300"><i class="fas fa-times"></i></button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const toggle = document.getElementById('mobile-toggle'), mobile = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', ()=> {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      mobile.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (href.length > 1) {
+          const el = document.querySelector(href);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        }
+      });
+    });
+
+    function openQuickView(title, img, note) {
+      const content = document.getElementById('modal-content');
+      content.innerHTML = `
+        <div class="grid md:grid-cols-2 gap-4 items-start">
+          <div><img src="${img}" alt="${title}" class="w-full h-64 object-cover rounded"></div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">${title}</h3>
+            <p class="text-gray-300 mb-3">${note || ''}</p>
+            <p class="text-sm text-gray-300 mb-4">To purchase or check stock, click Enquire — we'll reply with availability, shipping & pricing.</p>
+            <a href="#contact" class="px-4 py-2 rounded bg-[var(--gold)] text-black font-semibold">Enquire</a>
+          </div>
+        </div>`;
+      document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('modal').classList.add('flex');
+    }
+
+    function openQuickList(id) {
+      const content = document.getElementById('modal-content');
+      content.innerHTML = `<h3 class="text-xl font-bold mb-3">Fragrances</h3>
+        <ul class="list-disc ml-5 text-gray-300">
+          <li>Good Girl (Inspired) — sweet vanilla & jasmine</li>
+          <li>Baccarat Rouge (Inspired) — amber & saffron</li>
+          <li>Dior Sauvage (Inspired) — bergamot & pepper</li>
+          <li>Chanel-style florals — powdery, classic</li>
+          <li>And more — enquire for full list & availability</li>
+        </ul>
+        <div class="mt-4"><a href="#contact" class="px-4 py-2 rounded bg-[var(--gold)] text-black">Enquire for full list</a></div>`;
+      document.getElementById('modal').classList.remove('hidden'); 
+      document.getElementById('modal').classList.add('flex');
+    }
+
+    document.getElementById('modal-close')?.addEventListener('click', ()=> {
+      document.getElementById('modal').classList.add('hidden'); 
+      document.getElementById('modal').classList.remove('flex');
+    });
+
+    document.getElementById('modal')?.addEventListener('click', (e)=> {
+      if (e.target.id === 'modal') { 
+        document.getElementById('modal').classList.add('hidden'); 
+        document.getElementById('modal').classList.remove('flex'); 
+      }
+    });
+  </script>
+</body>
+</html>
